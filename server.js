@@ -11,6 +11,7 @@ var express = require("express"),
     path = require('path');
 
 app.get("/", function (req, res) {
+  console.log(req.baseUrl)
   res.sendFile(path.join(publicDir, "/index.html"));
 });
 
